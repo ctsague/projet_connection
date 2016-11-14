@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>projet connexion</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="node_modules/semantic-ui/dist/semantic.min.css">
+</head>
+<body>
+	<h1>Formulaire de connexion</h1>
+	<div class=ui-container>
+		<form class="ui form" action="/user" method="post">
+			 <div class="field">
+				<label for="userName">Nom Utilisateur</label>
+				<input type="text" name="userName" id="userName" value="mymail@yahoo.fr">
+			</div>
+			 <div class="field">
+				<label for="passeWord">Mot de passe</label>
+				<input type="password" name="passeWord" id="passeWord" value="motdepasse">
+			</div>
+			<button class="ui button" type="submit" id="valider" >Connexion</button>
+		</form>
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>
